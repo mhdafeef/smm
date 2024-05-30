@@ -81,6 +81,10 @@
         z-index: -1;
     }
 
+    .feature-desc h1 {
+        text-align: center;
+    }
+
     .big-feature-container, #second-big-feature {
         flex-direction: column;
     }
