@@ -149,7 +149,7 @@
     }
     
     h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     p {
@@ -196,13 +196,13 @@
     }
 
     .features-area {
-        gap: 22px;
+        gap: 20px;
     }
     
     .features-card {
-        padding: 30px 20px 20px 20px;
+        padding: 20px 10px 10px 10px;
         height: 276px;
-        width: 35%;
+        width: 40%;
     }
 
     .logo {
@@ -219,7 +219,7 @@
 
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 380px) {
     .features-area {
         gap: 22px;
     }
