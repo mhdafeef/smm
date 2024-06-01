@@ -48,6 +48,12 @@
         padding-block: 80px;
     }
     
+    .features-card {
+        padding: 30px 20px 20px 20px;
+        height: 300px;
+        width: 18%;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -64,14 +70,19 @@
         width: 100%;
     } */
 
-    .header-section {
+    .header-section, .big-feature-container-2 {
         flex-direction: column-reverse;
     }
 
     .header-left {
         max-width: 100vw;
         text-align: center;
-        margin-top: -170px;
+        margin-top: -150px;
+        width: auto;
+    }
+
+    .header-right {
+        width: auto;
     }
 
     .header-section {
@@ -81,19 +92,32 @@
         z-index: -1;
     }
 
-    .feature-desc h1 {
-        text-align: center;
+    .serv-underline {
+        width: 80%;
     }
 
     .big-feature-container, #second-big-feature {
         flex-direction: column;
     }
 
+    .features-area {
+        gap: 20px;
+    }
+    
+    .features-card {
+        padding: 30px 20px 20px 20px;
+        height: 276px;
+        width: 36%;
+    }
+
     .footer-container {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        /* flex-direction: column; */
         gap: 40px;
-        text-align: center;
-        align-items: center;
+        /* text-align: center;
+        align-items: center; */
     }
 
     .link-column {
@@ -125,11 +149,11 @@
     }
     
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     header {
@@ -147,8 +171,6 @@
         gap: 0;
     }
 
-
-
     .header-right img {
         width: 340px;
         z-index: -1;
@@ -159,10 +181,52 @@
     }
 
     .header-left h1 {
-        color: white;
-        font-size: 3rem;
-        font-weight: 800;
-        line-height: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
     }
 
+    .feature-desc h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .feature-desc-2 h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .features-area {
+        gap: 22px;
+    }
+    
+    .features-card {
+        padding: 30px 20px 20px 20px;
+        height: 276px;
+        width: 35%;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .swiper-slide {
+        padding: 0;
+    }
+
+     .serv-underline {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 408px) {
+    .features-area {
+        gap: 22px;
+    }
+    
+    .features-card {
+        padding: 30px 20px 20px 20px;
+        height: auto;
+        width: 100%;
+    }
 }
