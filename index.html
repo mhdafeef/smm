@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
 </head>
@@ -19,7 +20,7 @@
     </div> -->
 
     <!-- nav bar -->
-    <nav>
+    <nav id="navbar">
         <div class="container main-nav flex">
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
@@ -42,10 +43,10 @@
     <header>
         <div class="container header-section flex">
             <div class="header-left">
-                <h1 class="typing-1">ELEVATE<br>YOUR DIGITAL<br>PRESENCE<br>USING <span class="typing-text"></span><span class="cursor">&nbsp;</span></h1>
+                <h1>ELEVATE<br>YOUR DIGITAL<br>PRESENCE USING<br><span class="typing-text"></span><span class="cursor">&nbsp;</span></h1>
                 <!-- <h1 class="typing-2">ELEVATE<br>YOUR DIGITAL<br>PRESENCE<br>USING<br><span class="typing-text"></span><span class="cursor">&nbsp;</span></h1> -->
-                <p>We're here to assist you in maximizing your digital reach Take your video content to new heights with our technical support, ensuring excellence in production and maximizing your digital presence.</p>
-                <a href="#" class="primary-button get-started-btn">Get Started</a>
+                <p>We're here to assist you in maximizing your<br>digital reach.</p>
+                <a href="tel:+919037291737" class="primary-button get-started-btn">Talk with Us</a>
             </div>
             <div class="header-right">
                 <img src="./assets/home.png" alt="hero image" class="img-hom">
@@ -56,17 +57,15 @@
     <!-- companies section -->
 
     <section class="companies-section">
-        <div class="logo-cont">
-            <!-- <div class="small-bold-text companies-header">Platforms</div> -->
-            <div class="logos">
-                <img class="logo" src="./assets/fb.svg" alt="">
-                <img class="logo" src="./assets/Insta.svg" alt="">
-                <img class="logo" src="./assets/yt.svg" alt="">
-                <img class="logo" src="./assets/insta-reels.svg" alt="">
-                <img class="logo" src="./assets/yt-shorts.svg" alt="">
-
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="logo" src="./assets/fb.svg" alt=""></div>
+                <div class="swiper-slide"><img class="logo" src="./assets/Insta.svg" alt=""></div>
+                <div class="swiper-slide"><img class="logo" src="./assets/yt.svg" alt=""></div>
+                <div class="swiper-slide"><img class="logo" src="./assets/insta-reels.svg" alt=""></div>
+                <div class="swiper-slide"><img class="logo" src="./assets/yt-shorts.svg" alt=""></div>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- features section -->
@@ -74,44 +73,32 @@
     <section class="features-section">
         <div class="container">
             <div class="features-header">
-                <h2 class="features-heading-text">OUR SERVICES</h2>
+                <h2 class="features-heading-text">OUR SERVICES</h2><img class="serv-underline" src="./underline-doodle-c.svg" alt="" srcset="">
                 <!-- <a href="#" class="secondary-button">See all features <i class="fa-solid fa-right-long"></i></a> -->
             </div>
             <div class="features-area flex">
                 <div class="features-card flex">
                     <img src="./assets/asset 11.svg" alt="">
-                    <h3>VIDEO SHOOTING</h3>
-                    <p>Discover how people group and label information.</p>
+                    <h3>Social Media Management</h3>
+                    <p>Elevating online presence, fostering engagement, strategic posting.</p>
                     <!-- <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
                 <div class="features-card flex">
                     <img src="./assets/asset 13.svg" alt="">
-                    <h3>EDITING</h3>
-                    <p>Discover how people navigate your Figma prototypes.</p>
+                    <h3>Video<br>Production</h3>
+                    <p>Producing high quality videos with, polished editing, and captivating visuals.</p>
                     <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
                 <div class="features-card flex">
                     <img src="./assets/asset 14.svg" alt="">
-                    <h3>GRAPHICS DESIGNING</h3>
-                    <p>Test interaction with first click and navigation tests.</p>
+                    <h3>Graphics Designing</h3>
+                    <p>Crafting visual stories, creative concepts, stunning posters, brand aesthetics.</p>
                     <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
                 <div class="features-card flex">
-                    <img src="./assets/asset 15.svg" alt="">
-                    <h3>SOCIAL MEDIA</h3>
-                    <p>Get feedback on images, videos or audio files.</p>
-                    <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
-                </div>
-                <div class="features-card flex">
-                    <img src="./assets/asset 16.svg" alt="">
-                    <h3>SCHEDULING  POSTS</h3>
-                    <p>Find out which designs users prefer and why.</p>
-                    <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
-                </div>
-                <div class="features-card flex">
-                    <img src="./assets/asset 17.svg" alt="">
-                    <h3>REPORTS</h3>
-                    <p>Test comprehensibility by measuring first impressions.</p>
+                    <img src="./assets/asset 14.svg" alt="">
+                    <h3>Personal Branding</h3>
+                    <p>Cultivating personality, expanding influence and strategic positioning.</p>
                     <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
             </div>
@@ -123,35 +110,38 @@
     <section class="big-feature-section b-f-s-1">
         <div class="container flex big-feature-container">
             <div class="feature-img">
-                <img src="./assets/img/doctor-1.png" alt="">
+                <img src="./assets/img/doctor-2.png" alt="">
             </div>
             <div class="feature-desc flex">
-                <!-- <h4>Effortless validation for</h4> -->
-                <h1><span>Digital presence</span><br>helps your Organization</h1>
-                <!-- <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p> -->
-                <ol class="alternating-colors">
-                    <li class="po-1">
-                      <strong>Patient Engagement:</strong>
-                      <p>Digital presence facilitates active participation and collaboration between patients and healthcare providers, leading to better health outcomes and increased patient satisfaction.</p>
-                    </li>
-                    <li class="po-1">
-                      <strong>Health Education:</strong>
-                      <p>Through digital platforms, healthcare organizations can deliver relevant and timely health information to individuals, empowering them to make informed decisions about their health and adopt healthier lifestyles.</p>
-                    </li>
-                    <li class="po-1">
-                      <strong>Community Building:</strong>
-                      <p>Digital presence enables the creation of online communities where patients, caregivers, and healthcare professionals can connect, share experiences, and support each other, fostering a sense of belonging and empowerment.</p>
-                    </li>
-                    <li class="po-1">
-                      <strong>Brand Recognition:</strong>
-                      <p>By establishing a strong digital presence, healthcare organizations can increase their visibility and credibility among their target audience, leading to greater brand recognition and trust in their services.</p>
-                    </li>
-                  </ol>
+                <h1>Benefits of<br><span>Digital presence</span><img src="./underline-doodle.svg" alt="" srcset=""></h1>
+                  <ul class="doc-list">
+                    <li><strong>Awareness:</strong><br>Educating individuals on health topics boosts community health consciousness.</li>
+                    <li><strong>Community Engagement:</strong><br>Sharing fosters dialogue, support, and trust within the community.</li>
+                    <li><strong>Customer Acquisition:</strong><br>Attracting new patients through informative content enhances business growth.</li>
+                    <li><strong>Brand Loyalty:</strong><br>Providing valuable health information enhances reputation and patient loyalty.</li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="big-feature-section b-f-s-2">
+        <div class="container flex big-feature-container-2">
+            <div class="feature-desc-2 flex">
+                <h1>Elevate Your <br><span>Gym's Profile</span><img src="./underline-doodle-w.svg" alt="" srcset=""></h1>
+                  <ul class="doc-list-2">
+                    <li><strong>Visibility Boost:</strong><br>Sharing gym facilities and workouts expands brand exposure.</li>
+                    <li><strong>Expertise Display:</strong><br>Educating on fitness showcases trainers' proficiency, enhancing credibility.</li>
+                    <li><strong>Community Engagement:</strong><br>Shared content fosters member interaction and support networks.</li>
+                    <li><strong>Membership Growth:</strong><br>Informative posts attract new clients, driving business expansion.</li>
+                  </ul>
+            </div>
+            <div class="feature-img">
+                <img src="./assets/img/gym-1.png" alt="">
             </div>
         </div>
     </section>
     
-    <section class="big-feature-section">
+    <!-- <section class="big-feature-section">
         <div class="container flex big-feature-container" id="second-big-feature">
             <div class="feature-img">
                 <img src="./assets/asset 21.png" alt="">
@@ -175,7 +165,7 @@
                 <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- examples section -->
 
@@ -214,49 +204,38 @@
 
     <!-- footer -->
 
-    <footer>
+     <footer>
+    <!--<div class="container">
+            
+        </div>
         <div class="container flex footer-container">
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
             <div class="link-column flex">
-                <h4>Product</h4>
                 <a href="#" class="hover-link">Overview</a>
                 <a href="#" class="hover-link">Pricing</a>
                 <a href="#" class="hover-link">Usability Hub</a>
                 <a href="#" class="hover-link">Customers Page</a>
                 <a href="#" class="hover-link">Status Page</a>
             </div>
-            <div class="link-column flex">
-                <h4>Methodology</h4>
-                <a href="#" class="hover-link">Overview</a>
-                <a href="#" class="hover-link">Pricing</a>
-                <a href="#" class="hover-link">Usability Hub</a>
-                <a href="#" class="hover-link">Customers Page</a>
-                <a href="#" class="hover-link">Status Page</a>
-            </div>
-            <div class="link-column flex">
-                <h4>Resources</h4>
-                <a href="#" class="hover-link">Overview</a>
-                <a href="#" class="hover-link">Pricing</a>
-                <a href="#" class="hover-link">Usability Hub</a>
-                <a href="#" class="hover-link">Customers Page</a>
-                <a href="#" class="hover-link">Status Page</a>
-            </div>
-        </div>
-    </footer>
+        </div>-->
+
+        
+    </footer> 
 
     <!-- subfooter -->
 
     <div class="subfooter">
-        <div class="container flex subfooter-container">
+        <!-- <div class="container flex subfooter-container">
             <a class="hover-link" href="#">Privacy policy</a>
             <a class="hover-link" href="#">Terms & Condition</a>
             <a class="hover-link" href="#">Security Information</a>
             <a class="hover-link" href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a class="hover-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="hover-link" href="#"><i class="fa-brands fa-twitter"></i></a> -->
+            <p class="footer_copyright">Crafted 🔥 by mhdafeef © All Rights Reserved 2024</p>
         </div>
-    </div>
+    </div> 
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
@@ -270,11 +249,21 @@
 
     </script>
 
-    <script>
-        var copy = document.querySelector(".logos").cloneNode(true);
-        document.querySelector(".logo-cont").appendChild(copy);
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView:"auto",
+            loop: true,
+            centeredSlides: true,
+            speed: 2000,
+            allowTouchMove: false,
+            disableOnInteraction: false,
+            autoplay: {
+                delay: 1,
+            },
+        });
+    </script>
     <script src="script.js"></script>
 
 </body>
