@@ -118,7 +118,7 @@ ul {
 }
 
 .banner-text {
-    color: white;
+    color: #ffffff;
     padding: 15px 30px;
     text-align: center;
 }
@@ -161,6 +161,64 @@ ul {
 }
 
 /* header section */
+
+/* Menu Button 1 */
+.menu-btn-1 {
+    height: 32px;
+    width: 30px;
+    cursor: pointer;
+}
+
+    .menu-btn-1 span,
+    .menu-btn-1 span::before,
+    .menu-btn-1 span::after {
+        background: rgb(161, 161, 161);
+        border-radius: 3px;
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 5px;         
+        margin-top: 18px; 
+
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .menu-btn-1 span::before {
+        margin-top:-10px;
+        background-color: #3b3b3b;
+    }
+
+    .menu-btn-1 span::after {
+        margin-top:10px;
+        background-color: #3b3b3b;
+    }
+
+    .menu-btn-1.active span {
+        background: transparent;
+    }
+
+    .menu-btn-1.active span::before {
+        margin-top: 0;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .menu-btn-1.active span::after {
+        margin-top: 0;
+
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+/* Menu Button 1 */
 
 
 
@@ -257,14 +315,8 @@ span.typing-text {
 
 /* companies section - scrolling logo start */
 
-.wrapper {
-    height: 200px;
-    width: auto;
-    overflow: hidden;
-    background-color: #33f05c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.swiper {
+    z-index: -1;
 }
 
 .swiper-wrapper {
