@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
     
-    <!-- top banner -->
+<!-- top banner -->
 
-    <!-- <div class="top-banner">
+<!-- <div class="top-banner">
         <div class="container">
             <div class="small-bold-text banner-text">🥳 New to Usability Hub: Open and Closed card sorting</div>
         </div>
@@ -27,20 +28,22 @@
             </a>
             <div class="nav-links" id="nav-links">
                 <ul class="flex">
-                    <li><a href="#" class="hover-link">Products</a></li>
-                    <li><a href="#" class="hover-link">Customer</a></li>
+                    <!-- <li><a href="#navbar" class="hover-link">Home</a></li> -->
+                    <li><a href="#service" class="hover-link">Service</a></li>
                     <li><a href="#" class="hover-link">Pricing</a></li>
-                    <li><a href="#" class="hover-link">Resources</a></li>
+                    <li><a href="#contact" class="hover-link">Contact</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
+            <a class="nav-toggle hover-link" id="nav-toggle">
+                <div class="menu-btn-1" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div>
             </a>
         </div>
     </nav>
 
     <!-- header section -->
-    <header>
+    <header id="home">
         <div class="container header-section flex">
             <div class="header-left">
                 <h1>ELEVATE<br>YOUR DIGITAL<br>PRESENCE USING<br><span class="typing-text"></span><span class="cursor">&nbsp;</span></h1>
@@ -70,32 +73,32 @@
 
     <!-- features section -->
 
-    <section class="features-section">
-        <div class="container">
+    <section id="service" class="features-section">
+        <div class="container overflow-hid-mob">
             <div class="features-header">
                 <h2 class="features-heading-text">OUR SERVICES</h2><img class="serv-underline" src="./underline-doodle-c.svg" alt="" srcset="">
                 <!-- <a href="#" class="secondary-button">See all features <i class="fa-solid fa-right-long"></i></a> -->
             </div>
             <div class="features-area flex">
-                <div class="features-card flex">
+                <div class="features-card flex c-1">
                     <img src="./assets/asset 11.svg" alt="">
                     <h3>Social Media Management</h3>
                     <p>Elevating online presence, fostering engagement, strategic posting.</p>
                     <!-- <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
-                <div class="features-card flex">
+                <div class="features-card flex c-2">
                     <img src="./assets/asset 13.svg" alt="">
                     <h3>Video<br>Production</h3>
                     <p>Producing high quality videos with, polished editing, and captivating visuals.</p>
                     <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
-                <div class="features-card flex">
+                <div class="features-card flex c-3">
                     <img src="./assets/asset 14.svg" alt="">
                     <h3>Graphics Designing</h3>
                     <p>Crafting visual stories, creative concepts, stunning posters, brand aesthetics.</p>
                     <!-- <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a> -->
                 </div>
-                <div class="features-card flex">
+                <div class="features-card flex c-4">
                     <img src="./assets/asset 14.svg" alt="">
                     <h3>Personal Branding</h3>
                     <p>Cultivating personality, expanding influence and strategic positioning.</p>
@@ -107,7 +110,7 @@
 
     <!-- big features section -->
 
-    <section class="big-feature-section b-f-s-1">
+    <section class="big-feature-section b-f-s-1 overflow-hid-mob">
         <div class="container flex big-feature-container">
             <div class="feature-img">
                 <img src="./assets/img/doctor-2.png" alt="">
@@ -124,7 +127,7 @@
         </div>
     </section>
 
-    <section class="big-feature-section b-f-s-2">
+    <section class="big-feature-section b-f-s-2 overflow-hid-mob">
         <div class="container flex big-feature-container-2">
             <div class="feature-desc-2 flex">
                 <h1>Elevate Your <br><span>Gym's Profile</span><img src="./underline-doodle-w.svg" alt="" srcset=""></h1>
@@ -135,8 +138,25 @@
                     <li><strong>Membership Growth:</strong><br>Informative posts attract new clients, driving business expansion.</li>
                   </ul>
             </div>
-            <div class="feature-img">
+            <div class="feature-img f-img-2">
                 <img src="./assets/img/gym-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="big-feature-section b-f-s-3 overflow-hid-mob">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="./assets/img/arch-1.png" alt="">
+            </div>
+            <div class="feature-desc feature-desc-3 flex">
+                <h1>showcase your<br><span>projects, Online</span><img src="./underline-doodle.svg" alt="" srcset=""></h1>
+                  <ul class="doc-list-3">
+                    <li><strong>Visibility:</strong><br>Social media broadens reach, showcasing projects to a wider audience for potential clients.</li>
+                    <li><strong>Brand Building:</strong><br>Establish and strengthen brand identity by consistently sharing values and expertise.</li>
+                    <li><strong>Showcasing Portfolio:</strong><br>Platforms highlight completed projects, offering inspiration and insight into design style.</li>
+                    <li><strong>Community Engagement:</strong><br>Foster relationships, trust, and satisfaction through direct communication and interaction.</li>
+                  </ul>
             </div>
         </div>
     </section>
@@ -194,7 +214,7 @@
 
     <!-- cta section -->
 
-    <section class="cta-section">
+    <section id="contact" class="cta-section">
         <div class="container flex cta-section-container">
             <h2>Start testing today</h2>
             <p>Take the guesswork out of design decisions</p>
@@ -222,7 +242,7 @@
         </div>-->
 
         
-    </footer> 
+    </footer>
 
     <!-- subfooter -->
 
@@ -237,6 +257,12 @@
         </div>
     </div> 
 
+        <!--=============== Scrolltop ==================-->
+        <a href="#" class="scrolltop" id="scrolltop">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+        <!--=============== Scrolltop ==================-->
+
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
 
     <script>
@@ -248,6 +274,10 @@
         })
 
     </script>
+    
+        <!--=============== Scrollreveal ==================-->
+        <script src="./scrollreveal.min.js"></script>
+        <!--=============== Scrollreveal ==================-->
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -264,7 +294,7 @@
             },
         });
     </script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>
