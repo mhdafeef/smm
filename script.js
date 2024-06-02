@@ -1,3 +1,12 @@
+// Menu Button 1 //
+
+function menuBtnFunction(menuBtn) {
+  menuBtn.classList.toggle("active");
+}
+
+// Menu Button 1 //
+
+
 const typedTextSpan = document.querySelector(".typing-text");
         const cursorSpan = document.querySelector(".cursor");
         
@@ -40,23 +49,35 @@ const typedTextSpan = document.querySelector(".typing-text");
           if(textArray.length) setTimeout(type, newTextDelay + 250);
         });
 
+
+
+        /* Show scrolltop button
+======================================= */
+const scrolltop = document.getElementById("scrolltop");
+
+window.addEventListener("scroll", () => {
+  window.scrollY > 150
+    ? scrolltop.classList.add("scrolltop--active")
+    : scrolltop.classList.remove("scrolltop--active");
+});
+
 /* Scrollreveal Animations
 ======================================= */
-
 const sr = ScrollReveal({
-    distance: "100px",
-    duration: 2500,
-    delay: 200,
-    reset: false,
-  });
-  
-  sr.reveal(".typing-1", { origin: "top" });
-  sr.reveal(".img-hom", { origin: "bottom", interval: 200 });
-  sr.reveal(
-    ".img-hom",
-    { origin: "left" }
-  );
-  sr.reveal(
-    ".typing-1",
-    { origin: "right" }
-  );
+  distance: "150px",
+  duration: 2500,
+  delay: 200,
+  reset: false,
+});
+
+sr.reveal(".header-left", { origin: "top" });
+sr.reveal(".img-hom, .footer__data", { origin: "bottom", interval: 200 });
+sr.reveal(
+  ".c-1, .c-2, .feature-img, .feature-desc-2",
+  { origin: "left" }
+);
+sr.reveal(
+  ".c-3, .c-4, .feature-desc, .f-img-2",
+  { origin: "right" }
+);
+
