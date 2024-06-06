@@ -19,13 +19,17 @@
 
     .nav-links {
         position: absolute;
-        background-color: white;
+        background-color: #ffffff;
         left: -100%;
         top: 100%;
         width: 100%;
         padding-block: 20px;
         transition: 0.2s ease-in-out;
         border-radius: 0 0 20px 20px;
+    }
+
+    .nav-links a {
+        color: #282828;
     }
 
     .nav-links.active {
@@ -185,7 +189,7 @@
 
     .header-left h1 {
         font-size: 2.5rem;
-        line-height: 2.2rem;
+        line-height: 2.5rem;
     }
 
     .feature-desc h1 {
@@ -208,6 +212,10 @@
         width: 40%;
     }
 
+    .b-f-s-3 {
+        padding: 20px 0 20px 0;
+    }
+
     .logo {
         height: 30px;
     }
@@ -218,6 +226,10 @@
 
      .serv-underline {
         width: 80%;
+    }
+
+    .cl-dot-1 {
+        margin-left: -200px;
     }
 
     /* Scrolltop
