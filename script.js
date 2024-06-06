@@ -10,7 +10,7 @@ function menuBtnFunction(menuBtn) {
 const typedTextSpan = document.querySelector(".typing-text");
         const cursorSpan = document.querySelector(".cursor");
         
-        const textArray = ["REELS", "VIDEOS", "POSTERS"];
+        const textArray = ["Reels", "Videos", "Posters"];
         const typingDelay = 100;
         const erasingDelay = 100;
         const newTextDelay = 1200; // Delay between current and next text
@@ -71,9 +71,9 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".header-left", { origin: "top" });
-sr.reveal(".img-hom, .footer__data", { origin: "bottom", interval: 200 });
+sr.reveal(".img-hom, .feature-desc-4, .footer__data", { origin: "bottom", interval: 200 });
 sr.reveal(
-  ".c-1, .c-2, .feature-img, .feature-desc-2",
+  ".c-1, .c-2, .feature-img, .feature-desc-2, .feature-desc-5",
   { origin: "left" }
 );
 sr.reveal(
