@@ -105,6 +105,17 @@
     .features-area {
         gap: 20px;
     }
+
+    .feature-desc-4 {
+        flex-direction: column;
+    }
+
+    .feature-desc-4 .price-desc {
+        margin: 0;
+        border-left: none;
+        padding-left: 0;
+        margin-left: 16px;
+    }
     
     .features-card {
         padding: 30px 20px 20px 20px;
