@@ -95,7 +95,7 @@ ul {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 960px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
     /* overflow: hidden; */
@@ -314,7 +314,6 @@ header {
     transition: 0.2s ease-out;
     text-align: center;
     margin-top: 20px;
-    margin-left: 16px;
     font-size: 1.2rem;
     background-color:#ffffff;
     background-image:
@@ -561,7 +560,6 @@ span.typing-text {
 }
 
 .feature-desc-4 {
-    flex-direction: column;
     align-items: flex-start;
     background: linear-gradient(rgb(26, 26, 26), rgb(0, 0, 0)) padding-box,
                 linear-gradient(140deg, #6b66ff 0%,#ffb58a 25%,#ff85ad 50%,#fff185 75%,rgb(255, 255, 255)) border-box;
@@ -572,19 +570,23 @@ span.typing-text {
     margin: auto;
 }
 
+.feature-desc-4 .price-desc {
+    margin: auto;
+    border-left: 1px solid rgb(31, 31, 31);
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
 .feature-desc-4 h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    padding-left: 16px;
     margin: 0;
     color: white;
-    margin-top: 10px;
 }
 
 .feature-desc-4 .cross {
     font-size: 1.8rem;
     text-transform: uppercase;
-    padding-left: 16px;
     margin: 0;
     color: #ffe15c;
     font-weight: 600;
