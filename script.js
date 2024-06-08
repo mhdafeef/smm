@@ -6,7 +6,6 @@ function menuBtnFunction(menuBtn) {
 
 // Menu Button 1 //
 
-
 const typedTextSpan = document.querySelector(".typing-text");
         const cursorSpan = document.querySelector(".cursor");
         
@@ -71,13 +70,13 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".header-left", { origin: "top" });
-sr.reveal(".img-hom, .feature-desc-4, .footer__data", { origin: "bottom", interval: 200 });
+sr.reveal(".img-hom, .features-header, .feature-desc-4, .f-menu", { origin: "bottom", interval: 200 });
 sr.reveal(
-  ".c-1, .c-2, .feature-img, .feature-desc-2, .feature-desc-5",
+  ".c-1, .c-2, .ani-img-2, .feature-desc-2, .ani-img-4, .feature-desc-5",
   { origin: "left" }
 );
 sr.reveal(
-  ".c-3, .c-4, .feature-desc, .f-img-2",
+  ".c-3, .c-4, .feature-desc, .ani-img-3, .feature-desc-3, .ani-img-5",
   { origin: "right" }
 );
 
