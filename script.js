@@ -70,7 +70,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".header-left", { origin: "top" });
-sr.reveal(".img-hom, .features-header, .feature-desc-4, .f-menu", { origin: "bottom", interval: 200 });
+sr.reveal(".img-hom, .features-header, .feature-desc-4, .f-menu, .cta-section-container", { origin: "bottom", interval: 200 });
 sr.reveal(
   ".c-1, .c-2, .ani-img-2, .feature-desc-2, .ani-img-4, .feature-desc-5",
   { origin: "left" }
@@ -79,4 +79,3 @@ sr.reveal(
   ".c-3, .c-4, .feature-desc, .ani-img-3, .feature-desc-3, .ani-img-5",
   { origin: "right" }
 );
-
