@@ -49,7 +49,7 @@ img {
 :root {
     --primary-text-color: #ffffff;
     --secondary-text-color: #969696;
-    --accent-color: #e49fff;
+    --accent-color: #857cff;
     --accent-color-dark: #a00043;
     --padding-inline-section: 20px;
 }
@@ -374,8 +374,8 @@ span.typing-text {
 
   
 .logo {
-    height: 46px;
-    padding: 18px 20px;
+    height: 42px;
+    padding: 16px 20px;
     filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     opacity: 40%;
@@ -620,7 +620,7 @@ span.typing-text {
     transition: 0.2s ease-out;
     text-align: center;
     font-size: 1.2rem;
-    background: linear-gradient(rgb(26, 26, 26), rgb(0, 0, 0)) padding-box,
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
                 linear-gradient(240deg, #6b66ff 0%,#ffb58a 25%,#ff85ad 50%,#fff185 75%,rgb(255, 255, 255)) border-box;
     border: 2px solid transparent;
 
@@ -784,17 +784,25 @@ span.typing-text {
 
 /* cta section */
 
+.cta-section {
+    padding: 60px 20px;
+    margin: 0;
+}
+
 .cta-section-container {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     color: white;
     text-align: center;
 }
 
-.cta-section {
-    padding: 120px var(--padding-inline-section) 80px;
-    background-color: #183b54;
+.cta-section-container h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
 }
+
 
 .cta-section-container p {
     color: white;
