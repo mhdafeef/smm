@@ -106,6 +106,11 @@
         gap: 20px;
     }
 
+    .features-area-f4 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .feature-desc-4 {
         flex-direction: column;
     }
@@ -114,28 +119,20 @@
         margin: 0;
         border-left: none;
         padding-left: 0;
-        margin-left: 16px;
+        margin-top: 16px;
     }
     
     .features-card {
         padding: 30px 20px 20px 20px;
         height: 276px;
         width: 36%;
+        margin: auto;
     }
 
-    .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px;
-        /* flex-direction: column; */
-        gap: 40px;
-        /* text-align: center;
-        align-items: center; */
-    }
-
-    .link-column {
+    /* .link-column {
         align-items: stretch;
-    }
+        gap: 30px
+    } */
 
     .header-right img {
         width: 340px;
@@ -143,6 +140,18 @@
     }
 
 }
+
+@media screen and (max-width: 629px) {
+
+    .link-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .f-menu {
+        margin: 0;
+        padding: 0 0 16px 20px;
+    }
+
 
 @media screen and (max-width: 479px) {
     :root {
@@ -168,10 +177,6 @@
 
     p {
         font-size: 0.8rem;
-    }
-
-    .overflow-hid-mob {
-        overflow: hidden;
     }
     
 
@@ -216,6 +221,10 @@
     .features-area {
         gap: 20px;
     }
+
+    .features-area-f4 {
+        gap: 20px;
+    }
     
     .features-card {
         padding: 20px 10px 10px 10px;
@@ -243,20 +252,44 @@
         margin-left: -200px;
     }
 
+    .f-menu a {
+        font-size: 1rem;
+    }
+
+    .mq-629-margin p {
+        width: 3040px;
+    }
+    
+    .mq-629-margin p {
+        font-size: 1rem;
+    }
+
     /* Scrolltop
    ======================================= */
-   .scrolltop {
-    right: 2rem;
-  }
-  
-  .scrolltop--active {
-    bottom: 2rem;
-  }
+    .scrolltop {
+        right: 2rem;
+    }
+    
+    .scrolltop--active {
+        bottom: 2rem;
+    }
+
+        /* Scrolltop end
+   ======================================= */
+
+    .link-column {
+        grid-template-columns: 1fr ;
+    }
+
 
 }
 
 @media screen and (max-width: 380px) {
     .features-area {
+        gap: 22px;
+    }
+
+    .features-area-f4 {
         gap: 22px;
     }
     
