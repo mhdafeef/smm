@@ -48,10 +48,6 @@
         width: calc(50% - 10px);
         height: 180px;
     }
-
-    .cta-section {
-        padding-block: 80px;
-    }
     
     .features-card {
         padding: 30px 20px 20px 20px;
@@ -151,7 +147,7 @@
         margin: 0;
         padding: 0 0 16px 20px;
     }
-
+}
 
 @media screen and (max-width: 479px) {
     :root {
